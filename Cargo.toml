@@ -1,0 +1,25 @@
+[package]
+name = "matrix-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "matrix-rs"
+path = "src/main.rs"
+
+# [draw_tools]
+# name = "draw_tools"
+# path = "draw_tools/src/lib.rs"
+
+# [life_and_death]
+# name = "life_and_death"
+# path = "life_and_death/src/lib.rs"
+
+[dependencies]
+ncurses = "*"
+draw_tools = { path = "./draw_tools" }
+inc_data = { path = "./inc_data" }
+# life_and_death = { path = "../life_and_death" }
+# pair = { path = "../pair" }
